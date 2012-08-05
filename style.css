@@ -1,0 +1,50 @@
+/* Multi Gallery Styles */
+.imageGallery{
+	position:relative;
+}
+.imageGallery ul{
+	margin:0;
+	padding:0;
+}
+.imageGallery .slides li{
+	position:absolute;
+	list-style:none;
+	display:none;
+}
+.imageGallery .navSlider{
+	position:absolute;
+	bottom:13px;
+	right:13px;
+	z-index:9999;
+}
+.imageGallery .navSlider li{
+	float:left;
+	list-style:none;
+	margin:0 0 0 6px;
+	height:11px;
+	width:11px;
+	background:url(multiGallerySprite.png) -28px -10px no-repeat;
+	cursor:pointer;
+}
+.imageGallery .navSlider li.active, 
+.imageGallery .navSlider li:hover {
+	background:url(multiGallerySprite.png) -10px -10px no-repeat;
+}
+.navNextArrow,
+.navBackArrow{
+	display:none;
+	width:28px;
+	height:48px;
+	z-index:9999;
+	position:absolute;
+	cursor:pointer;
+	background:url(multiGallerySprite.png) no-repeat;
+}
+.navNextArrow{
+	right:0;
+	background-position:-107px 0;
+}
+.navBackArrow{
+	left:0;
+	background-position:-60px 0;
+}
